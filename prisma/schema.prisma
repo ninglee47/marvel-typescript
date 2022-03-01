@@ -9,7 +9,21 @@ datasource db {
 }
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
-model Avengers_Disassembled {
+model avengers_Disassembled {
+  id    Int @id
+  title String
+  img   String
+  url   String
+}
+
+model house_Of_M {
+  id    Int @id
+  title String
+  img   String
+  url   String
+}
+
+model civil_War {
   id    Int @id
   title String
   img   String

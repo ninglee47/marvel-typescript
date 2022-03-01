@@ -1,9 +1,9 @@
 -- CreateTable
-CREATE TABLE "Avengers_Disassembled" (
+CREATE TABLE "house_Of_M" (
     "id" INTEGER NOT NULL,
     "title" TEXT NOT NULL,
     "img" TEXT NOT NULL,
     "url" TEXT NOT NULL,
 
-    CONSTRAINT "Avengers_Disassembled_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "house_Of_M_pkey" PRIMARY KEY ("id")
 );

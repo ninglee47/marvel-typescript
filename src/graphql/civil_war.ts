@@ -1,7 +1,7 @@
 import { extendType, objectType } from "nexus";
 
-export const Data = objectType({
-    name: "Data", 
+export const Civil_War = objectType({
+    name: "Civil_War", 
     definition(t) { 
         t.nonNull.int("id"); 
         t.nonNull.string("title"); 
@@ -10,13 +10,13 @@ export const Data = objectType({
     },
 });
 
-export const LinkQuery = extendType({  
+export const Civil_War_query = extendType({  
     type: "Query",
     definition(t) {
-        t.nonNull.list.nonNull.field("feed", {   
-            type: "Data",
+        t.nonNull.list.nonNull.field("feed_civil_War", {   
+            type: "Civil_War",
             resolve(parent, args, context, info) {    
-                return context.prisma.avengers_Disassembled.findMany();
+                return context.prisma.civil_War.findMany();
             },
         });
     },

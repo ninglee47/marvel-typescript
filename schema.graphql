@@ -2,7 +2,21 @@
 ### Do not make changes to this file directly
 
 
+type Civil_War {
+  id: Int!
+  img: String!
+  title: String!
+  url: String!
+}
+
 type Data {
+  id: Int!
+  img: String!
+  title: String!
+  url: String!
+}
+
+type House_Of_M {
   id: Int!
   img: String!
   title: String!
@@ -11,4 +25,6 @@ type Data {
 
 type Query {
   feed: [Data!]!
+  feed_civil_War: [Civil_War!]!
+  feed_house_Of_M: [House_Of_M!]!
 }

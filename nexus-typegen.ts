@@ -28,7 +28,19 @@ export interface NexusGenScalars {
 }
 
 export interface NexusGenObjects {
+  Civil_War: { // root type
+    id: number; // Int!
+    img: string; // String!
+    title: string; // String!
+    url: string; // String!
+  }
   Data: { // root type
+    id: number; // Int!
+    img: string; // String!
+    title: string; // String!
+    url: string; // String!
+  }
+  House_Of_M: { // root type
     id: number; // Int!
     img: string; // String!
     title: string; // String!
@@ -48,7 +60,19 @@ export type NexusGenRootTypes = NexusGenObjects
 export type NexusGenAllTypes = NexusGenRootTypes & NexusGenScalars
 
 export interface NexusGenFieldTypes {
+  Civil_War: { // field return type
+    id: number; // Int!
+    img: string; // String!
+    title: string; // String!
+    url: string; // String!
+  }
   Data: { // field return type
+    id: number; // Int!
+    img: string; // String!
+    title: string; // String!
+    url: string; // String!
+  }
+  House_Of_M: { // field return type
     id: number; // Int!
     img: string; // String!
     title: string; // String!
@@ -56,11 +80,25 @@ export interface NexusGenFieldTypes {
   }
   Query: { // field return type
     feed: NexusGenRootTypes['Data'][]; // [Data!]!
+    feed_civil_War: NexusGenRootTypes['Civil_War'][]; // [Civil_War!]!
+    feed_house_Of_M: NexusGenRootTypes['House_Of_M'][]; // [House_Of_M!]!
   }
 }
 
 export interface NexusGenFieldTypeNames {
+  Civil_War: { // field return type name
+    id: 'Int'
+    img: 'String'
+    title: 'String'
+    url: 'String'
+  }
   Data: { // field return type name
+    id: 'Int'
+    img: 'String'
+    title: 'String'
+    url: 'String'
+  }
+  House_Of_M: { // field return type name
     id: 'Int'
     img: 'String'
     title: 'String'
@@ -68,6 +106,8 @@ export interface NexusGenFieldTypeNames {
   }
   Query: { // field return type name
     feed: 'Data'
+    feed_civil_War: 'Civil_War'
+    feed_house_Of_M: 'House_Of_M'
   }
 }
 
