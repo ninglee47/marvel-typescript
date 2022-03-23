@@ -5,7 +5,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  //url      = env("DATABASE_URL")
+  url      = "postgres://gsytfxpftawvwh:b4d3cf9c0a3ff79a84ab568efec7ed4a61854cb21e1338135a0e8ef368c958f3@ec2-52-31-201-170.eu-west-1.compute.amazonaws.com:5432/dfq9os1f4f4get"
 }
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
