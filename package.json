@@ -8,14 +8,16 @@
     "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
     "generate": "ts-node --transpile-only src/schema.ts",
     "start": "ts-node src/index.ts",
-    "migrate": "npx prisma migrate dev"
+    "migrate": "npx prisma migrate dev",
+    "prisma": "prisma studio"
   },
-  "engines": { "node": "14.15.3" },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "prisma": "^3.10.0",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.5"
   },
