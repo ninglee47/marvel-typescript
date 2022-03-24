@@ -8,7 +8,7 @@
     "generate": "ts-node --transpile-only src/schema.ts",
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node build/src/index.js",
     "migrate": "npx prisma migrate dev",
     "prisma": "prisma studio"
   },
